@@ -19,7 +19,7 @@ builder.Services.AddControllersWithViews().AddJsonOptions(options => { options.J
 builder.Services.AddControllers();
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 builder.Services.AddDbContext<NorthwindContext>(options => options.UseSqlServer("name=NwindConnection"));
-builder.Services.AddScoped<EmployeeRepository>();
+builder.Services.AddScoped<FirstWebAPI.Models.RepositoryEmp>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
